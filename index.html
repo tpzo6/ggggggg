@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>زر الصوت</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      color: white;
+    }
+
+    .sound-button {
+      background: url('button.jpg') no-repeat center center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .sound-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>اضغط الزر لسماع الصوت 🎵</h1>
+  <button class="sound-button" onclick="document.getElementById('audio').play()"></button>
+  <audio id="audio" src="sound.mp3"></audio>
+
+</body>
+</html>
